@@ -7,6 +7,12 @@ void saludar(string nombre){
     cout << "Hola " << nombre << endl;
 }
 
+struct { // Esto es una estructura, no se puede imprimir en consola
+    string nombre;
+    int edad;
+    float peso;
+}persona;
+
 int main(){
     int a = 28, b = 45;
     bool c = true;
@@ -23,6 +29,15 @@ int main(){
     cout << vegetal << endl;
     cout << "planta está en " << &planta << endl; // Acá estoy imprimiendo la dirección en memoria de las variables.
     cout << "vegetal está en " << &vegetal << endl;
+
+    string* arbol = &planta; // La variable arbol guarda la dirección en memoria
+    cout << "Árbol está en " << arbol << endl;
+
+    persona.nombre = "Mariano";
+    persona.edad = 23;
+    persona.peso = 100;
+
+
 
 
     return 0;
