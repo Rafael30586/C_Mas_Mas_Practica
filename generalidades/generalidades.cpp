@@ -13,6 +13,20 @@ struct { // Esto es una estructura, no se puede imprimir en consola
     float peso;
 }persona;
 
+namespace google_chrome {
+    string marca = "Google";
+    void navegar(){
+        cout << "Estoy navegando con Google chrome" << endl;
+    }
+};
+
+namespace firefox {
+    string marca = "Mozilla";
+    void navegar(){
+        cout << "Estoy navegando con Firefox" << endl;
+    }
+} 
+
 int main(){
     int a = 28, b = 45;
     bool c = true;
@@ -37,8 +51,8 @@ int main(){
     persona.edad = 23;
     persona.peso = 100;
 
-
-
+    google_chrome::navegar();
+    firefox::navegar();   
 
     return 0;
 }
