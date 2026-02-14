@@ -52,7 +52,12 @@ int main(){
     persona.peso = 100;
 
     google_chrome::navegar();
-    firefox::navegar();   
+    firefox::navegar();
+    
+    int *puntero;
+    puntero = new int(28);
+    cout << "La dirección de puntero es: " << puntero << endl;
+    cout << "El valor de puntero es: " << *puntero << endl;     
 
     return 0;
 }
